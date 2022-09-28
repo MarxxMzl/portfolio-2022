@@ -60,7 +60,7 @@ html {
   --body-typeface: 'Montserrat', sans-serif;
   --heading-typeface: 'Montserrat', sans-serif;
   --background-color: #ffffff;
-  --alt-background-color: black;
+  --alt-background-color: rgb(255, 255, 255);
   --text-selection-background-color: #555;
   --base-color: 0;
   --color-lightest: hsla(var(--base-color), 1%, 85%, 100%);
@@ -184,7 +184,7 @@ a:active {
 
 
 p {
-  font-size: 1.6275;
+  font-size: 24px;
   line-height: 1.3;
   margin-bottom: 1rem;
 }
@@ -365,7 +365,7 @@ p {
 /* Sidebar */
 .project-aside {
   width: 100%;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -476,7 +476,7 @@ p {
   }
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     grid-gap: 1rem;
   }
 
@@ -553,7 +553,7 @@ p {
 
 
   .project-image {
-    min-height: 100vh;
+    min-height: 60vh;
   }
 
 
