@@ -10,15 +10,8 @@
 
 
 
-
-@import url("https://fonts.googleapis.com/css?family=Hepta+Slab|Staatliches&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('make-something-fly.css');
-@import url('animated-gradient.css');
-@import url('xtext-stroke.css');
-@import url('stroke-shadow.css');
 @import url('scroll-to-top.css');
 /*
 
@@ -64,9 +57,9 @@ html {
   --hyperlink-color: #333;
   --hyperlink-alternate-color: orangered;
   --hover-color: #111;
-  --body-typeface: "Inter", sans-serif;
-  --heading-typeface: "Staatliches", cursive; 
-  --background-color: #000000;
+  --body-typeface: 'Montserrat', sans-serif;
+  --heading-typeface: 'Montserrat', sans-serif;
+  --background-color: #ffffff;
   --alt-background-color: black;
   --text-selection-background-color: #555;
   --base-color: 0;
@@ -574,4 +567,4 @@ p {
   /* XX-Large devices (larger desktops, 1400px and up) */
   @media (min-width: 1400px) {
 
-  }
+  }}
