@@ -9,8 +9,8 @@
 */
 
 
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('fonts.css');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('make-something-fly.css');
 @import url('scroll-to-top.css');
 /*
@@ -57,17 +57,12 @@ html {
   --hyperlink-color: #333;
   --hyperlink-alternate-color: orangered;
   --hover-color: #111;
-  --body-typeface: 'Montserrat', sans-serif;
-  --heading-typeface: 'Montserrat', sans-serif;
+  --body-typeface: 'Raleway', sans-serif;
+  --heading-typeface: 'Windslow';
   --background-color: #FFFDF8;
   --alt-background-color: rgb(255, 255, 255);
   --text-selection-background-color: #555;
   --base-color: 0;
-  --color-lightest: hsla(var(--base-color), 1%, 85%, 100%);
-  --color-light: hsla(var(--base-color), 1%, 75%, 100%);
-  --color-normal: hsla(var(--base-color), 1%, 50%, 100%);
-  --color-dark: hsla(var(--base-color), 1%, 35%, 100%);
-  --color-darkest: hsla(var(--base-color), 1%, 15%, 100%);
 }
 
 
@@ -131,7 +126,8 @@ h3 {
 
 .hero-headline {
   text-transform: uppercase;
-
+  -webkit-text-fill-color: #000000;
+  -webkit-text-stroke: 2px #000000;
   color: var(--hero-headline-color);
 }
 
@@ -241,9 +237,10 @@ p {
 */
 
 .hero {
-  min-height: 80vh;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
+  background: yellowgreen;
 }
 
 .branding-navigation {
@@ -252,12 +249,18 @@ p {
   justify-content: space-between;
   padding: 1rem;
   align-items: center;
+  width: 100%;
+  background: rgba(255,0,0,0.2);
 }
-
+.header-navigation-area {background: red; width: 10%;}
+.header-navigation-subarea {background: lightblue; display: flex; flex-direction: column; justify-content: space-between; min-height: 20vh;}
 .logo {
-  width: 3rem;
+  width: 30%; background: blue;
+  text-align: center;
 }
-
+.wordmark {background: purple; width: 100%;}
+.wordmark-name {background: white; margin-bottom: 0;  text-transform: uppercase; }
+.wordmark-subhead {background: white; text-transform: uppercase;}
 .hero-headline-wrapper {
   display: flex;
   flex-direction: column;
@@ -463,12 +466,12 @@ p {
 
 
 
-  .logo {
+  /* .logo {
     width: 5rem;
-  }
+  } */
 
   .hero {
-    min-height: 100vh;
+    min-height: 20vh;
   }
 
   .hero-headline-wrapper {

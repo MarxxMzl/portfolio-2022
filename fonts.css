@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Windslow';
+    src: url('fonts/WindslowRegular.eot');
+    src: url('fonts/WindslowRegular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/WindslowRegular.woff2') format('woff2'),
+        url('fonts/WindslowRegular.woff') format('woff'),
+        url('fonts/WindslowRegular.ttf') format('truetype'),
+        url('fonts/WindslowRegular.svg#WindslowRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
