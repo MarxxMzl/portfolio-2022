@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Simple Creative Portfolio 2022 | Project Page</title>
+  <meta name="description"
+    content="When writing a meta description, keep it between 140 and 160 characters so Google can display your entire message. Don’t forget to include your keyword!">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header class="hero-header">
+    <ul class="branding-navigation">
+      <li><a href="index.html" class="custom-navigation">Work</a></li>
+      <li class="logo"><a href="index.html"><img src="personal logo-07.jpg" /></a></li>
+      <li><a href="about.html" class="custom-navigation">About</a></li>
+    </ul>
+  </header>
+  <div class="project-wrapper">
+    <aside class="project-aside">
+      <div class="project-info">
+        <h1>SIRIUS TYPE</h1>
+        <p>Sirius type was initially sketches I had on a back of a worksheet when I got bored back in the high school.
+          Four years later, I bring it back the old sketches and ideas, refined details and expand it.
+        </p>
+
+      </div>
+      <ul class="project-navigation">
+        <li class="arrow"><a href="#" class="navigation-arrow"><i class="fas fa-arrow-left fa-2x"></i></a></li>
+        <li class="arrow"><a href="#" class="navigation-arrow"><i class="fas fa-arrow-right fa-2x"></i></a></li>
+      </ul>
+    </aside>
+    <main class="project-details">
+      <div class="project-image"><img src="marco-mo--1-sirius-typography-design--modern-italic-san-serif-typeface-font--typeface-sample-on-image.jpg"></div>
+      <div class="project-image"><img src="marco-mo--2-sirius-typography-design--modern-italic-san-serif-typeface-font--all-glyphs-display-and-project-description.png"></div>
+    </main>
+
+  </div>
+  <ul class="global-footer">
+    <li class="footer-item-1">
+      <h2>About Me!</h2>
+      <p>
+        Marco Mo is a designer who comes from shanghai, china. he is studying at Capilano university, school of design.
+        Being born and raised in china allows me to design in Chinese and English. He may not be born with a natural
+        talent, but he is open-minded and adaptable to new things. he love to try everything with patience and be
+        meticulous in every detail.<a href="javascript:void(0)"></a>
+      </p>
+    </li>
+    <li class="footer-item-2">
+      <h2>Awards &amp; Recognition</h2>
+      <ul class="awards-list">
+        <li class="award-item"><a href="#">Award goes here</a></li>
+        <li class="award-item"><a href="#">Award goes here</a></li>
+        <li class="award-item"><a href="#">Award goes here</a></li>
+      </ul>
+    </li>
+    <li class="footer-item-3">
+      <h2>Contact &amp; Social</h2>
+      <ul class="socials-list">
+        <li class="social-item"><a href="https://www.instagram.com/marxx_mzl/" target="_blank">Instagram</a></li>
+        <li class="social-item"><a href="https://www.linkedin.com/in/marcomo071/"
+            target="_blank">linkedin</a></li>
+        <li class="social-item"><a href="https://www.behance.net/marcomzl" target="_blank">behance</a></li>
+      </ul>
+    </li>
+    <li class="footer-item-4">
+      <p><a href="#top">Smooth scroll to the top</a></p>
+      <p>&copy; 2022. Made with ❤ and CSS Grid by James Neufeld.</p>
+    </li>
+  </ul>
+  <div id="myID" class="bottomMenu hide"><a href="project-2.html">Next Project</a></div>
+  <div id="ghostanimation" class="ghost"><img src="cactus.svg" /></div>
+  <script type="text/javascript">
+    function ShowHideDiv(btnGhost) {
+      var GhostStyle = document.getElementById("ghostanimation");
+      if (btnGhost.value == "Hide Ghost") {
+        GhostStyle.style.display = "none";
+        btnGhost.value = "Play Ghost";
+      } else {
+        GhostStyle.style.display = "block";
+        btnGhost.value = "Hide Ghost";
+      }
+    }
+  </script>
+  <script type="text/javascript">
+    myID = document.getElementById("myID");
+
+    var myScrollFunc = function () {
+      var y = window.scrollY;
+      if (y >= 800) {
+        myID.className = "bottomMenu show"
+      } else {
+        myID.className = "bottomMenu hide"
+      }
+    };
+
+    window.addEventListener("scroll", myScrollFunc);
+  </script>
+
+</body>
+
+</html>
