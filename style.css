@@ -256,7 +256,7 @@ p {
 .header-navigation-area {background: red; width: 10%;}
 .header-navigation-subarea {background: lightblue; display: flex; flex-direction: column; justify-content: space-between; min-height: 20vh;}
 .logo {
-  width: 30%; background: blue;
+  width: 9%;
   text-align: center;
 }
 .wordmark {background: purple; width: 100%;}
@@ -392,6 +392,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 1vh;
 }
 
 .about-image {
