@@ -69,7 +69,10 @@ html {
 body {
   font-family: var(--body-typeface);
   color: var(--primary-text-color);
-  background: var(--background-color);
+  background: url(hero-elements/redlines.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0% -1.75%;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -241,7 +244,9 @@ p {
   min-height: 20vh;
   display: flex;
   flex-direction: column;
-  background: yellowgreen;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .branding-navigation {
@@ -251,17 +256,16 @@ p {
   padding: 1rem;
   align-items: center;
   width: 100%;
-  background: rgba(255,0,0,0.2);
 }
-.header-navigation-area {background: red; width: 10%;}
-.header-navigation-subarea {background: lightblue; display: flex; flex-direction: column; justify-content: space-between; min-height: 20vh;}
+.header-navigation-area {}
+.header-navigation-subarea {display: flex; flex-direction: column; justify-content: space-between; min-height: 20vh;}
 .logo {
-  width: 9%;
+  width: 30%;
   text-align: center;
 }
-.wordmark {background: purple; width: 100%;}
-.wordmark-name {background: white; margin-bottom: 0;  text-transform: uppercase; }
-.wordmark-subhead {background: white; text-transform: uppercase;}
+.wordmark { width: 100%;}
+.wordmark-name { margin-bottom: 0;  text-transform: uppercase; }
+.wordmark-subhead { text-transform: uppercase;}
 .hero-headline-wrapper {
   display: flex;
   flex-direction: column;
@@ -270,6 +274,10 @@ p {
   justify-content: center;
   padding: 2rem 4rem;
   text-align: center;
+  min-height: 80vh;
+  background: url(hero-elements/marco-mo-logo-08-2.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
 }
 
 .hero-icon {
@@ -369,8 +377,7 @@ p {
 /* Sidebar */
 .project-aside {
   width: 100%;
-  color: rgb(0, 0, 0);
-  padding: 1rem;
+  padding: 7rem 7rem 2rem 7rem;
   display: flex;
   flex-direction: column;
 }
@@ -535,31 +542,28 @@ p {
   }
 
   /* Project Page Flex Direction on Large Devices */
-  .project-wrapper {
+  /* .project-wrapper {
     flex-direction: row;
 
-  }
+  } */
 
 
   /* Sidebar on Large Devices */
-  .project-aside {
+  /* .project-aside {
     width: 35%;
     height: 50vh;
     position: -webkit-sticky;
     position: sticky;
     top: 5vh;
-  }
+  } */
 
 
   /* Main Project Image Area on Large Devices */
-  .project-details {
+  /* .project-details {
     width: 65%;
-  }
+  } */
 
-
-  .project-image {
-    min-height: 60vh;
-  }
+}
 
 
 
@@ -572,4 +576,4 @@ p {
   /* XX-Large devices (larger desktops, 1400px and up) */
   @media (min-width: 1400px) {
 
-  }}
+  }
