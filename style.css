@@ -63,6 +63,8 @@ html {
   --alt-background-color: rgb(255, 255, 255);
   --text-selection-background-color: #555;
   --base-color: 0;
+  --arcturus: purple;
+  --coin: darkgreen;
 }
 
 
@@ -195,7 +197,8 @@ p {
   margin-bottom: 1rem;
 }
 
-
+.arcturus {color: var(--arcturus);}
+.coin {color: var(--coin);}
 
 /* Work Page Layout
 
