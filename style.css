@@ -52,7 +52,7 @@ html {
 
 :root {
   --primary-text-color: #222;
-  --accent-color: #555;
+  --accent-color: #FFFDF8;
   --hero-headline-color: #222;
   --hyperlink-color: #333;
   --hyperlink-alternate-color: orangered;
@@ -60,7 +60,7 @@ html {
   --body-typeface: 'Raleway', sans-serif;
   --heading-typeface: 'Windslow';
   --background-color: #FFFDF8;
-  --alt-background-color: rgb(255, 255, 255);
+  --alt-background-color: #FFFDF8;
   --text-selection-background-color: #555;
   --base-color: 0;
   --arcturus: purple;
@@ -113,7 +113,7 @@ img {
 */
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: var(--heading-typeface);
   margin-bottom: 1rem;
   color: var(--baby-powder);
@@ -130,14 +130,28 @@ h3 {
   font-size: 1.325rem;
   margin-bottom: 1rem;
   line-height: 1.3;
+  font-family: var(--heading-typeface);
+}
+
+h4 {
+  font-family: var(--body-typeface);
+}
+
+h5 {
+  font-family: var(--body-typeface);
+}
+
+h5 {
+  font-family: var(--heading-typeface);
 }
 
 
 
+
 .hero-headline {
-  text-transform: uppercase;
+  /*text-transform: uppercase;
   -webkit-text-fill-color: #000000;
-  -webkit-text-stroke: 2px #000000;
+  -webkit-text-stroke: 2px #000000;*/
   color: var(--hero-headline-color);
   font-family: 'Raleway';
 }
@@ -211,6 +225,7 @@ p {
 */
 
 .work-wrapper {
+  padding: 1rem;
   flex: 1;
 }
 
@@ -225,6 +240,7 @@ p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
+  background: var(--background-color);
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
 }
 
@@ -259,16 +275,16 @@ p {
 }
 
 .work-page-subheader {
-  background: yellowgreen;
+  padding: 5rem 2rem 0rem 2rem;
   width: 100%;
-  min-height: 80vh;
+  min-height: 60vh;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
   background: url(hero-elements/marco-mo-logo-08-2.svg);
   background-repeat: no-repeat;
-  background-position: center right;
-  background-size: contain;
+  background-position: bottom right;
+  background-size: 30%;
 
 
 }
@@ -280,17 +296,23 @@ p {
   padding: 1rem;
   align-items: center;
   width: 100%;
-  height: 25vh;
-
+  /*height: 25vh;*/
 }
 
-.header-navigation-area {}
+.header-navigation-area {
+  
+}
 
 .header-navigation-subarea {
+  font-family: var(--heading-typeface);
+  text-transform: uppercase;
+  padding-top: 3.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 20vh;
+  min-height: 22vh;
+  -webkit-text-fill-color: #000000;
+  -webkit-text-stroke: 1px #000000;
 }
 
 .work-page-wordmark-container {
@@ -299,7 +321,10 @@ p {
 }
 
 .wordmark {
-  width: 100%;
+  padding-top: 4rem;
+  /*width: 100%;*/
+  -webkit-text-fill-color: #000000;
+  -webkit-text-stroke: 2px #000000;
 }
 
 .wordmark-name {
@@ -362,17 +387,26 @@ p {
 .global-footer,
 .about {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 3rem;
-  min-height: 100vh;
-  background: #f5f5f5;
+  grid-template-columns: repeat(4, 1fr);
+  /*grid-gap: 3rem;
+  min-height: 20vh;*/
+  background: #FFFDF8;
   padding: 1rem 1rem;
+}
+
+.description {		
+  display: grid;		
+  grid-template-columns: repeat(1, 1fr);		
+  /*grid-gap: 3rem;		
+  min-height: 20vh;*/		
+  background: #FFFDF8;		
+  padding: 1rem 10rem;
 }
 
 .footer-item-1,
 .about-item-1 {
   grid-column: 1 / 2;
-  grid-row: 1 / 2;
+  grid-row: 1 / 4;
 }
 
 .footer-item-2,
@@ -383,7 +417,7 @@ p {
 
 .footer-item-3,
 .about-item-3 {
-  grid-column: 1 / 2;
+  grid-column: 2 / 2;
   grid-row: 3 / 4;
 }
 
@@ -393,24 +427,21 @@ p {
   grid-row: 4 / 5;
 }
 
-.footer-item-1 {
-  background: salmon;
-}
+.footer-item-1 {}
 
 .footer-item-3 {
-  background: hotpink;
   display: flex;
   justify-content: flex-end;
 }
 
 .socials-list {
+  text-transform: uppercase;
   display: flex;
   flex-direction: row;
-  background: yellowgreen;
-  width: 50%;
+  width: 80%;
   height: 2rem;
   justify-content: space-between;
-  align-items: center;
+  align-items: bottom;
 }
 
 /* Project Page 
@@ -528,26 +559,53 @@ p {
 */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+  /*h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.625rem;
+  }*/
+}
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+  /*h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.625rem;
+  }*/
+}
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
   h1 {
-    font-size: 4.275rem;
+    font-size: 5.575rem;
   }
 
   h2 {
-    font-size: 2.5rem;
+    font-size: 4.625rem;
   }
 
   h3 {
-    font-size: 1.625rem;
+    font-size: 3rem;
   }
 
+  h4 {
+    font-size: 2rem;
+  }
+
+  h5 {
+    font-size: 2rem;
+  }
 
 
 
@@ -561,9 +619,10 @@ p {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     grid-gap: 1rem;
-    border: 2px solid hotpink;
+    border: 2px solid red;
     border-radius: 1rem;
     padding: .67825rem;
+    background: var(--background-color);
   }
 
   /* Grayscale filter with full-colour on hover and tap */
@@ -579,7 +638,7 @@ p {
 
   .global-footer,
   .about {
-    padding: 4rem 4rem;
+    padding: 4rem 1rem;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
@@ -597,6 +656,7 @@ p {
 
   .footer-item-3,
   .about-item-3 {
+    padding-top: 3rem;
     grid-row: 1 / 2;
     grid-column: 3 / 4;
   }
