@@ -197,6 +197,11 @@ a:active {
   color: var(--hyperlink-alternate-color);
 }
 
+.custom-navigation-back {
+  font-size: 3rem;
+  font-family: var(--heading-typeface);
+}
+
 .custom-navigation:hover {
   background: url(heading-background.svg);
   background-size: 15%;
@@ -393,6 +398,10 @@ p {
   padding: 1rem 1rem;
 }
 
+global-footer {
+  border-top: 1px solid red;
+}
+
 .description {		
   display: grid;		
   grid-template-columns: repeat(1, 1fr);		
@@ -514,6 +523,7 @@ p {
 
 .about-image {
   font-size: 14rem;
+  width: 60%;
 }
 
 
@@ -523,7 +533,12 @@ p {
   padding: 1rem;
 }
 
-
+.about-content {
+  margin: 2rem;
+  border: 1px solid red;
+  border-radius: 20px;
+  background: #fff;
+}
 
 
 
