@@ -1,7 +1,7 @@
 .bottomMenu {
     position: fixed;
     right: 0;
-    bottom: 0;
+    bottom: 12vh;
     width: 8rem;
     height: 2rem;
     background: var(--floral-white);
@@ -10,7 +10,8 @@
     justify-content: center;
     z-index: 1;
     transition: all 1s;
-    margin: 1rem;
+    margin: 3rem;
+
 }
 .hide {
     opacity:0;
