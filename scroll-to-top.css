@@ -1,7 +1,7 @@
 .bottomMenu {
     position: fixed;
     right: 0;
-    bottom: 12vh;
+    bottom: 6vh;
     width: 8rem;
     height: 2rem;
     background: var(--floral-white);
