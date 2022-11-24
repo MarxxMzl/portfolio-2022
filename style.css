@@ -395,10 +395,10 @@ p {
 .description {		
   display: grid;		
   grid-template-columns: repeat(1, 1fr);	
-  width: 95vh;	
+  /*width: 95vh;	
   /*grid-gap: 3rem;		
   min-height: 20vh;*/			
-  padding: 1rem 3rem;
+  padding: 1rem 3rem 1rem 25rem;
 }
 
 .footer-item-1,
@@ -460,9 +460,7 @@ p {
   height: 15vh;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem 1rem 3rem;
-  /*position: -webkit-sticky;
-  position: sticky;*/
+  padding: 2rem 6rem 1rem 6rem;
   top: 0;
 }
 
@@ -491,7 +489,7 @@ p {
 /* Sidebar */
 .project-aside {
   width: 100%;
-  padding: 4rem 3rem 1rem 3rem;
+  padding: 4rem 6rem 1rem 6rem;
   display: flex;
   flex-direction: column;
 }
@@ -506,7 +504,7 @@ p {
 }
 
 .arrow {
-  padding-right: 1rem;
+  padding: 0rem 3rem;
 }
 
 .project-image {
@@ -517,7 +515,11 @@ p {
   justify-content: center;
   margin: 1vh;
 }
-
+.project-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 	
 .project-info span {
   font-size: 3rem;
