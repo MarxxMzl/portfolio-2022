@@ -2,7 +2,7 @@
     position: fixed;
     right: 0;
     bottom: 6vh;
-    width: 8rem;
+    width: 7rem;
     height: 2rem;
     background: var(--floral-white);
     display: flex;
@@ -10,7 +10,7 @@
     justify-content: center;
     z-index: 1;
     transition: all 1s;
-    margin: 3rem;
+    margin: 3rem 0rem;
 
 }
 .hide {
