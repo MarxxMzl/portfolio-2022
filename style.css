@@ -297,7 +297,7 @@ p {
   display: block;
   flex-direction: row;
   justify-content: space-between;
-  padding: 3rem 3rem 1rem 3rem;
+  padding: 3rem 1rem 1rem 1rem;
   align-items: center;
   width: 100%;
   /*height: 25vh;*/
@@ -615,7 +615,7 @@ p {
 
   .branding-navigation {
     display: flex;
-    padding: 3rem 1rem 1rem 1rem;
+    padding: 3rem 3rem 1rem 3rem;
   }
   
   
