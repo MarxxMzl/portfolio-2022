@@ -116,14 +116,14 @@ img {
 */
 
 h1 {
-  font-size: 2.125rem;
+  font-size: 2.05rem;
   font-family: var(--heading-typeface);
   /*margin-bottom: 1rem;*/
   color: var(--baby-powder);
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3.75rem;
   font-family: var(--heading-typeface);
   margin-bottom: 1rem;
   color: var(--baby-powder);
@@ -285,7 +285,7 @@ p {
   background: url(hero-elements/marco-mo-logo-08-2.svg);
   background-repeat: no-repeat;
   background-position: bottom right;
-  background-size: 30%;
+  background-size: contain;
 
   /* z-index: 50; */
 
@@ -613,21 +613,27 @@ p {
   body {
     font-size: 1.5rem;
   }
-  work-page-subheader {
-    padding: 5rem 2rem 0rem 2rem;
+
+  .branding-navigation {
+    display: flex;
+    padding: 3rem 1rem 1rem 1rem;
   }
+  
   
   .headline-3 {
     text-align: right;
     margin-right: 17vh;
+  }
+
+  .work-page-subheader {
+    padding: 5rem 2rem 0rem 2rem;
+    background-size: 30%;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
-  .branding-navigation {
-    display: flex;
-  }
 
 }
 
