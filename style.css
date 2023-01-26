@@ -71,7 +71,7 @@ html {
 body {
   font-family: var(--body-typeface);
   color: var(--primary-text-color);
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -116,14 +116,14 @@ img {
 */
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.125rem;
   font-family: var(--heading-typeface);
   /*margin-bottom: 1rem;*/
   color: var(--baby-powder);
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 4rem;
   font-family: var(--heading-typeface);
   margin-bottom: 1rem;
   color: var(--baby-powder);
@@ -221,14 +221,18 @@ p {
 */
 
 .work-wrapper {
-  padding: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem 1rem;
   flex: 1;
+  border: 2px solid red;
+  border-radius: 20px;
 }
 
 /* Padding around work grid and project page */
 .portfolio,
 .project-wrapper {
-  padding: .25rem
+  padding: .25rem;
+  
 }
 
 /* Defining the work page grid */
@@ -260,7 +264,6 @@ p {
 ██   ██ ███████ ██   ██  ██████  
                                  
 */
-.work-page-header-wrapper { }
 .work-page-header { min-height: 20vh;
   display: flex;
   flex-direction: column;
@@ -272,7 +275,7 @@ p {
 }
 
 .work-page-subheader {
-  padding: 5rem 2rem 0rem 2rem;
+  padding: 5rem 1rem 0rem 1rem;
   width: 100%;
   min-height: 60vh;
   display: flex;
@@ -291,7 +294,7 @@ p {
 }
 
 .branding-navigation {
-  display: flex;
+  display: block;
   flex-direction: row;
   justify-content: space-between;
   padding: 3rem 3rem 1rem 3rem;
@@ -341,10 +344,8 @@ p {
   width: 100%;
 
 }
-.headline-3 {
-  text-align: right;
-  margin-right: 17vh;
-}
+
+
 .hero-icon {
   font-size: 4rem;
 }
@@ -603,23 +604,35 @@ p {
 
   h1 {
     font-size: 3.75rem;
- 
   }
-  h2 {
-    font-size: 4rem;
-  }
+
   h3 {
     font-size: 1.625rem;
   }
+
+  body {
+    font-size: 1.5rem;
+  }
+  work-page-subheader {
+    padding: 5rem 2rem 0rem 2rem;
+  }
+  
+  .headline-3 {
+    text-align: right;
+    margin-right: 17vh;
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
+  .branding-navigation {
+    display: flex;
+  }
+
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+/* Large devices (desktops, 1020px and up) */
+@media (min-width: 1020px) {
 
 
   h1 {
@@ -652,6 +665,8 @@ p {
     padding: .67825rem;
     background: var(--background-color);
   }
+
+
 
   /* Grayscale filter with full-colour on hover and tap */
   /* .work-page-grid-item a img {
