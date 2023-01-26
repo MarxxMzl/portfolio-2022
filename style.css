@@ -80,10 +80,10 @@ body {
 
 
 .work-page-header-wrapper{
-  background: url(hero-elements/redlines.svg);
+  background: url(hero-elements/mobile-redlines.svg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0% -1.75%;
+  background-size: contain;
+  background-position: 0% 0%;
   background-attachment: fixed;
   min-height: 100vh;
 }
@@ -295,7 +295,7 @@ p {
 
 .branding-navigation {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   padding: 3rem 1rem 1rem 1rem;
   align-items: center;
@@ -303,21 +303,19 @@ p {
   /*height: 25vh;*/
 }
 
-.header-navigation-area {
-  
-}
+
 
 
 .header-navigation-subarea {
   font-family: var(--heading-typeface);
   text-transform: uppercase;
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* mobile */
   justify-content: space-between;
-  min-height: 15vh;
+  min-height: 1.5rem;
   -webkit-text-fill-color: #000000;
   -webkit-text-stroke: 1px #000000;
-  background-color: #5200FF;
+  width: 100%;
 }
 
 .work-page-wordmark-container {
@@ -325,7 +323,7 @@ p {
   display: flex;
   justify-content: center;
   order: 1;
-  background-color: aqua;
+
 }
 
 .wordmark {
@@ -349,8 +347,14 @@ p {
 
 }
 
+.header-navigation-area {width: 100%; background green;}
+
 .about-gallery {
-  background-color: rgb(255, 0, 200);
+  order: 2;
+}
+
+.contact-projects {
+  order: 3;
 }
 
 .hero-icon {
@@ -574,6 +578,12 @@ p {
 
 
 
+/* EVERYTHING ABOVE THIS LINE IS FOR MOBILE
+   MOST OF YOUR CSS SHOULD BE ABOVE THIS LINE
+   EXCEPT FOR THINGS YOU WANT TO CHANGE ON TABLET
+   AND LARGE DEVICES
+
+*/
 
 
 
@@ -582,32 +592,42 @@ p {
 
 
 
-/* EVERYTHING ABOVE THIS LINE IS FOR MOBILE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* EVERYTHING BELOW THIS LINE IS FOR LARGER DEVICES */
 
-
-
-
-
-
-
-
-
-
 /*
 
- ██████  ███    ███ ███████ ██████   █████  
-██    ██ ████  ████ ██      ██   ██ ██   ██ 
-██ ██ ██ ██ ████ ██ █████   ██   ██ ███████ 
-██ ██ ██ ██  ██  ██ ██      ██   ██ ██   ██ 
- █ ████  ██      ██ ███████ ██████  ██   ██ 
-                                            
+       ___  __             __        ___  __     ___  __  
+ |\/| |__  |  \ |  /\     /  \ |  | |__  |__) | |__  /__` 
+ |  | |___ |__/ | /~~\    \__X \__/ |___ |  \ | |___ .__/ 
+                                                          
+
                                            
 */
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+
+/* Very little should go here. This is for small devices. Everything here is also for small devices. You can probably delete this. */
 
   h1 {
     font-size: 3.75rem;
@@ -620,25 +640,25 @@ p {
   body {
     font-size: 1.5rem;
   }
-
-  .branding-navigation {
-    display: block;
-    padding: 3rem 3rem 1rem 3rem;
-  }
-  
   
   .headline-3 {
     text-align: right;
     margin-right: 17vh;
   }
-
+  
+  .about-gallery {
+    order: 1;
+  }
   .work-page-wordmark-container {
     padding: 2.75vh;
     text-align: center;
     display: flex;
     justify-content: center;
-    
-  }
+    order: 2;
+     }
+    .contact-projects {
+      order: 3;
+    }     
 
   .work-page-subheader {
     padding: 5rem 2rem 0rem 2rem;
@@ -659,11 +679,7 @@ p {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
-
-}
-
-/* Large devices (desktops, 1020px and up) */
-@media (min-width: 1020px) {
+/* Most of your customizations for tablet and desktop can go here */
 
 
   h1 {
@@ -678,8 +694,21 @@ p {
     font-size: 3.5rem;
   }
 
+  .branding-navigation {
+    display: flex; /* Marco had display block but it could have been an error */
+    flex-direction: column; /* Desktop */
+    padding: 3rem 3rem 1rem 3rem;
+    
+  }
 
-
+  .work-page-header-wrapper{
+    background: url(hero-elements/redlines.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% -1.75%;
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
 
 
   .work-page-header {
@@ -782,13 +811,38 @@ p {
     width: 65%;
   } */
 
+
+
+
+
+
+
+
+
+}
+
+/* Large devices (desktops, 1020px and up) */
+@media (min-width: 1020px) {
+
+/* Very little for large devices can go here */
+
 }
 
 
 
 
 /* X-Large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+/* Only a few things for extra large devices should go here */
+
+
+}
 
 /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+
+/* Only put stuff here if you want adjust extra-extra large monitors */
+
+
+}
