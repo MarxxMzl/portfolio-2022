@@ -71,7 +71,7 @@ html {
 body {
   font-family: var(--body-typeface);
   color: var(--primary-text-color);
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -79,11 +79,10 @@ body {
 }
 
 
-.work-page-header-wrapper{
+.work-page{
   background: url(hero-elements/mobile-redlines.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: 0% 0%;
   background-attachment: fixed;
   min-height: 100vh;
 }
@@ -116,14 +115,14 @@ img {
 */
 
 h1 {
-  font-size: 2.05rem;
+  font-size: 8.7vw;
   font-family: var(--heading-typeface);
   /*margin-bottom: 1rem;*/
   color: var(--baby-powder);
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 16.5vw;
   font-family: var(--heading-typeface);
   margin-bottom: 1rem;
   color: var(--baby-powder);
@@ -224,8 +223,6 @@ p {
   padding: 0.5rem;
   margin: 0.5rem 1rem;
   flex: 1;
-  border: 2px solid red;
-  border-radius: 20px;
 }
 
 /* Padding around work grid and project page */
@@ -277,7 +274,7 @@ p {
 .work-page-subheader {
   padding: 5rem 1rem 0rem 1rem;
   width: 100%;
-  min-height: 60vh;
+  min-height: 70vh;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
@@ -403,8 +400,6 @@ p {
 .global-footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /*grid-gap: 3rem;
-  min-height: 20vh;*/
   background: #FFFDF8;
   padding: 1rem 1rem;
 }
@@ -427,33 +422,16 @@ p {
   grid-row: 1 / 4;
 }
 
-.about-item-1 {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-}
+
+
 .footer-item-2 {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-}
-
-.about-item-2 {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-}
-
-.footer-item-3,
-.about-item-3 {
-  grid-column: 2 / 2;
+  grid-column: 3 / 4;
   grid-row: 3 / 4;
 }
 
-.footer-item-4,
-.about-item-4 {
-  grid-column: 1 / 2;
-  grid-row: 4 / 5;
-}
 
-.footer-item-1 {}
+
+
 
 .footer-item-3 {
   display: flex;
@@ -464,7 +442,7 @@ p {
   text-transform: uppercase;
   display: flex;
   flex-direction: row;
-  width: 80%;
+  width: 100%;
   height: 2rem;
   justify-content: space-between;
   align-items: bottom;
@@ -589,29 +567,6 @@ p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* EVERYTHING BELOW THIS LINE IS FOR LARGER DEVICES */
 
 /*
@@ -621,6 +576,27 @@ p {
  |  | |___ |__/ | /~~\    \__X \__/ |___ |  \ | |___ .__/ 
                                                           
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                                            
 */
 
@@ -629,51 +605,6 @@ p {
 
 /* Very little should go here. This is for small devices. Everything here is also for small devices. You can probably delete this. */
 
-  h1 {
-    font-size: 3.75rem;
-  }
-
-  h3 {
-    font-size: 1.625rem;
-  }
-
-  body {
-    font-size: 1.5rem;
-  }
-  
-  .headline-3 {
-    text-align: right;
-    margin-right: 17vh;
-  }
-  
-  .about-gallery {
-    order: 1;
-  }
-  .work-page-wordmark-container {
-    padding: 2.75vh;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    order: 2;
-     }
-    .contact-projects {
-      order: 3;
-    }     
-
-  .work-page-subheader {
-    padding: 5rem 2rem 0rem 2rem;
-    background-size: 30%;
-  }
-
-  header-navigation-subarea {
-    font-family: var(--heading-typeface);
-    text-transform: uppercase;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 15vh;
-    -webkit-text-fill-color: #000000;
-    -webkit-text-stroke: 1px #000000;
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -696,18 +627,17 @@ p {
 
   .branding-navigation {
     display: flex; /* Marco had display block but it could have been an error */
-    flex-direction: column; /* Desktop */
-    padding: 3rem 3rem 1rem 3rem;
+    flex-direction: row; /* Desktop */
+    padding: 2rem 3rem 1rem 3rem;
     
   }
 
-  .work-page-header-wrapper{
+  .work-page{
     background: url(hero-elements/redlines.svg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0% -1.75%;
-    background-attachment: fixed;
+    background-size: 100%;
     min-height: 100vh;
+    background-attachment: fixed;
   }
 
 
@@ -715,7 +645,7 @@ p {
     min-height: 20vh;
   }
 
-  .hero-headline-wrapper {}
+  
 
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
@@ -727,7 +657,47 @@ p {
   }
 
 
+  
+  .headline-3 {
+    text-align: right;
+    margin-right: 17vh;
+  }
+  
+  .about-gallery {
+    order: 1;
+  }
 
+  .work-page-wordmark-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    order: 2;
+     }
+    .contact-projects {
+      order: 3;
+    }     
+
+  .work-page-subheader {
+    padding: 5rem 2rem 0rem 2rem;
+    background-size: 30%;
+  }
+
+  .header-navigation-subarea {
+    font-family: var(--heading-typeface);
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 15vh;
+    -webkit-text-fill-color: #000000;
+    -webkit-text-stroke: 1.25px #000000;
+  }
+  .project-wrapper {
+    margin: 2rem;
+    border: 2px solid red;
+    border-radius: 20px;
+  }
+}
   /* Grayscale filter with full-colour on hover and tap */
   /* .work-page-grid-item a img {
     filter: grayscale(100);
@@ -739,83 +709,37 @@ p {
   } */
 
 
-  .global-footer,
-  .about {
-    padding: 2rem 3rem;
-    grid-template-columns: 1fr 1fr 1fr;
+  .global-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: #FFFDF8;
+    padding: 1rem 1rem;
+    border-top: 2px solid red;
   }
-
+  
+  
+  
   .footer-item-1 {
     grid-column: 1 / 2;
-    grid-row: 1 / 2;
+    grid-row: 1 / 4;
   }
-
-  .footer-item-2{
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-  }
-
-  .about-item-1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-  .about-item-2 {
-
-    grid-column: 2 / 4;
-    grid-row: 1 / 2;
-    align-self: end;
-    padding: 2rem;
-
-  }
-
-  .footer-item-3,
-  .about-item-3 {
-    padding-top: 7.5vh;
-    grid-row: 1 / 2;
+  
+  
+  .footer-item-3{
     grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
   }
 
-  .footer-item-4,
-  .about-item-4 {
-    grid-row: 2 / 3;
-    grid-column: 1 / 4;
-    text-align: center;
-    align-self: end;
+  
+
+
+  .about {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
   }
-
-  /* Padding around work grid and project page */
-  .portfolio,
-  .project-wrapper {
-    padding: .5rem
-  }
-
-  /* Project Page Flex Direction on Large Devices */
-  /* .project-wrapper {
-    flex-direction: row;
-
-  } */
-
-
-  /* Sidebar on Large Devices */
-  /* .project-aside {
-    width: 35%;
-    height: 50vh;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 5vh;
-  } */
-
-
-  /* Main Project Image Area on Large Devices */
-  /* .project-details {
-    width: 65%;
-  } */
-
-
-
-
-
-
 
 
 
@@ -823,26 +747,37 @@ p {
 
 /* Large devices (desktops, 1020px and up) */
 @media (min-width: 1020px) {
-
-/* Very little for large devices can go here */
-
+  .global-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: #FFFDF8;
+    padding: 1rem 1rem;
+    border-top: 2px solid red;
+  }
+  
+  
+  
+  .footer-item-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+  }
+  
+  
+  .footer-item-3{
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+  
+  
 }
 
 
 
-
-/* X-Large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-
-/* Only a few things for extra large devices should go here */
-
-
-}
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
 
-/* Only put stuff here if you want adjust extra-extra large monitors */
-
 
 }
+/* Only put stuff here if you want adjust extra-extra large monitors */
